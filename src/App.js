@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import AddNote from './components/AddNote';
+import NoteItems from './components/NoteItems';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container my-5 p-5 text-center" style={{borderRadius:"10px",border:"2px solid red",width:'35rem'}}>
+      <h1>ADD YOUR NOTES HERE</h1>
+      <AddNote />
+      <NoteItems />
     </div>
   );
 }
